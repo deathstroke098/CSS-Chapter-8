@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* background-color: rgb(80, 202, 202); */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* body { */
+            /* background: url('img2.jpg') no-repeat center center/cover; */
+            /* min-height:30vh;    } */
+        
+
+        header::before {
+            background: url('porsche.jpg') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* bottom: 50px; */
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+
+        header {
+
+            min-height: 13vh;
+            width: 100%;
+            /* background-color: rgb(151, 113, 113); */
+            /* border: 3px solid blue; */
+
+        }
+
+        .logo {
+            float: left;
+
+        }
+
+        .logo img {
+            width: 190px;
+            height: 160px;
+            margin: 20px 0px 20px 90px
+        }
+
+        .abc {
+            font-size: 60px;
+            text-align: center;
+            color: #fff;
+            margin-left: 90px;
+            overflow: hidden;
+            font-weight: 700;
+            /* margin-bottom: 20px; */
+            /* padding-bottom: 70px; */
+            text-transform: uppercase;
+            /* text-shadow: 1px 1px 1px red; */
+        }
+
+        .abc:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+        .header_cont {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+            margin-left: 600px;
+            /* float: right;
+            margin-top: 98px;
+            margin-right: 70px; */
+
+
+            /* display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+            text-align: center; */
+            /* list-style: none;
+            text-decoration: none;
+            align-items: center; */
+        }
+
+        .header_cont a {
+            list-style: none;
+            text-decoration: none;
+            font-size: 60px;
+            line-height: 55px;
+            padding: 70px;
+            color: rgb(255, 255, 255);
+            /* border-top: 2px solid whitesmoke;
+            border-right: 2px solid whitesmoke;
+            border-bottom: 2px solid whitesmoke;
+            border-left: 2px solid whitesmoke; */
+            /* border-right: 4px solid white; */
+            /* border-left: 4px solid white; */
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+            text-transform: uppercase;
+            margin: 4px 40px 0 30px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            /* border: 2px solid red; */
+
+        }
+
+        .header_cont a:hover {
+            text-decoration: underline;
+            color: rgb(0, 81, 255);
+            /* background-color: rgb(31, 219, 210); */
+        }
+
+        .btn {
+            float: right;
+            padding: 41px 141px;
+            margin: 80px 120px 0px 0px;
+            font-size: 54px;
+            background-color: rgb(202, 200, 50);
+            color: black;
+            border: none;
+            border-radius: 11px;
+            font-weight: 900;
+
+
+        }
+
+        .btn:hover {
+            background-color: tomato;
+            color: rgb(255, 253, 253);
+            cursor: pointer;
+        }
+
+
+        .text {
+            display: flex;
+            height: 1500px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text h1 {
+            text-align: center;
+            font-size: 80px;
+            font-weight: 900;
+            margin-bottom: 40px;
+            color: rgb(255, 255, 255);
+
+        }
+
+        .text h2 {
+            text-align: center;
+            font-size: 140px;
+            margin-bottom: 30px;
+            color: rgb(255, 255, 255);
+            letter-spacing: 0.8rem;
+
+        }
+        .change_content::after{
+            content: "";
+            color: darkorange;
+            animation: saif 5s infinite linear ;
+        }
+        @keyframes saif{
+            0%{content: "MOST WANTED";}
+            25%{content: "PAYBACK";}
+            50%{content: "THE RUN";}
+            75%{content: "UNDERGROUND-2";}
+            100%{content: "CARBON";}
+            
+        }
+
+        /* 
+        .text h2::first-letter {
+            font-size: 350px;
+            color: red;
+        } */
+
+        .text h3 {
+            text-align: center;
+            font-size: 43px;
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: 900;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            /* margin-left: 20px; */
+        }
+
+        .btn1 {
+            padding: 50px 150px;
+            border: 2px solid black;
+            font-size: 50px;
+            font-weight: 900;
+            margin: 20px 0px 20px 0px;
+            background-color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 11px;
+        }
+
+        .btn2 {
+            margin-left: 120px;
+            padding: 50px 150px;
+            font-weight: 900;
+            font-size: 50px;
+            background-color: rgb(0, 174, 255);
+            border: none;
+            border-radius: 11px;
+        }
+
+        .btn1:hover {
+            background-color: rgb(0, 174, 255);
+            cursor: pointer;
+        }
+
+        .btn2:hover {
+            background-color: white;
+            cursor: pointer;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 180px;
+            /* background-color: rgb(221, 221, 179); */
+            margin-top: 188px;
+        }
+        .footer p{
+            color: white;
+            font-size: 50px;
+            font-weight: 900;
+            letter-spacing: 1.6px;
+            /* font-style: italic; */
+            
+        }
+       
+       
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="playstation.png" alt="">
+            <div class="abc">Sony</div>
+        </div>
+
+        <div class="header_cont">
+
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <button class="btn">Login</button>
+        <button class="btn">Sign Up</button>
+    </header>
+
+    <div class="text">
+        <h1> GAMING . PHOTOGRAPHY . FILM-MAKING</h1>
+        <h2>NEED FOR SPEED <span class="change_content"></span></h2>
+        <h3>I CREATED THIS DESIGN FROM SCRATCH ON MY OWN , CONGRATULATIONS</h3>
+
+        <div class="buttons">
+            <button class="btn1">LIKE SHARE</button>
+            <button class="btn2">SUBSCRIBE</button>
+        </div>
+    </div>
+   <footer class="footer">
+       <p>Criterion Games - Copyright &copy; All rights reserved 1998.</p>
+   </footer>
+
+</body>
+
+</html>

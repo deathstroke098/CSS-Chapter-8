@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Baloo+Bhai+2:wght@500&family=Comfortaa:wght@500&family=Comforter&family=Grenze+Gotisch:wght@400;500&family=Montserrat:wght@500&family=Rock+Salt&family=Ubuntu&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            /* overflow: hidden; */
+        }
+
+        .navbar {
+            display: flex;
+            /* background-color: rgb(141, 207, 207); */
+            /* justify-content: center;
+            align-items: center; */
+            position: sticky;
+            /* z-index: -1; */
+            cursor: pointer;
+        }
+
+        .logo {
+            float: left;
+        }
+
+        .logo img {
+            height: 100px;
+            margin: 40px 0px 0px 60px;
+            /* border: 7px solid black; */
+            /* border-radius: 40px; */
+
+        }
+
+        .navlist {
+            /* background-color: rgb(90, 77, 59); */
+            display: flex;
+            margin-left: 173px;
+        }
+
+        .navlist li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            text-decoration: none;
+            margin: 0px 0px 0px 60px;
+            /* list-style: none; */
+        }
+
+        .navlist li a {
+            font-size: 44px;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            /* margin-left: 300px; */
+        }
+
+        .navlist li a:hover {
+            text-decoration: underline;
+        }
+
+        .searchbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 220px;
+            /* padding: 40px; */
+        }
+
+        .searchbar input {
+            text-align: left;
+            height: 72px;
+            width: 879px;
+            padding: 10px 56px;
+            font-size: 46px;
+            font-weight: 600;
+            /* border: 3px solid black; */
+        }
+
+        .btn1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 51px 106px;
+            padding: 19px 90px;
+            font-size: 43px;
+            border: none;
+            /* border-radius: 11px; */
+        }
+
+        .btn1:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: tomato;
+        }
+
+        .btn2 {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 49px 0px;
+            padding: 1px 70px;
+            font-size: 43px;
+            border: none;
+            /* border-radius: 11px; */
+        }
+
+        .btn2:hover {
+            text-decoration: underline;
+            cursor: pointer;
+            background-color: rgb(90, 240, 44);
+        }
+
+        .background {
+            background: rgba(0, 0, 0, 0.6) url('chicago.jpg');
+            /* background-position: center; */
+            background-size: cover;
+            background-blend-mode: darken;
+        }
+
+        .main-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            max-width: 50%;
+            margin: auto;
+            height: 76%;
+        }
+
+        .firstSection {
+            height: 70vh;
+        }
+
+        .firstHalf {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .text1 {
+            font-size: 66px;
+        }
+
+        .text1:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .text2 {
+            font-size: 30px;
+            font-weight: 400;
+            margin-top: 30px;
+
+        }
+
+        .text2::first-line {
+            font-size: 40px;
+            color: yellow;
+        }
+
+        .buttons {
+            margin-top: 38px;
+        }
+
+        .buttn {
+            padding: 19px 101px;
+            font-size: 32px;
+            margin: 0px 22px;
+            border: none;
+        }
+
+        .buttn:hover {
+            background-color: tomato;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .secondHalf img {
+            height: 299px;
+            /* border: 9px solid rgb(255, 255, 255); */
+            /* border-radius: 50%; */
+        }
+
+        .secRight {
+            /* height: 40vh; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            /* max-width: 50%; */
+            max-width: 56%;
+            margin: auto;
+            height: 600px;
+        }
+
+        .secLeft {
+            /* height: 40vh; */
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            /* max-width: 50%; */
+            max-width: 56%;
+            margin: auto;
+            height: 600px;
+        }
+
+        .secTop {
+            /* height: 40vh; */
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            /* max-width: 50%; */
+            max-width: 56%;
+            margin: auto;
+            height: 600px;
+        }
+
+        .secBottom {
+            /* height: 40vh; */
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+            /* max-width: 50%; */
+            max-width: 56%;
+            margin: auto;
+            height: 600px;
+        }
+
+        .sectionTag {
+            font-size: 60px;
+            text-transform: capitalize;
+            /* margin-top: 20px; */
+            /* padding: 20px; */
+            margin: 12px;
+        }
+
+        .sectionTag:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .sectionSubTag {
+            font-size: 30px;
+            text-transform: capitalize;
+            margin: 17px;
+        }
+
+        .sectionSubTag::first-letter {
+            font-size: 50px;
+            color: red;
+        }
+
+        .contact {
+            background-color: rgb(195, 204, 204);
+            height: 1250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 90px; */
+
+        }
+
+        .contact h2 {
+            font-size: 90px;
+            /* margin-bottom: 50px; */
+        }
+
+        .contact input {
+            border: 9px solid grey;
+            border-radius: 20px;
+            margin-top: 30px;
+            padding: 40px 440px;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .btnn {
+            padding: 43px 594px;
+            margin-top: 30px;
+            font-size: 71px;
+            border: 2px solid;
+        }
+        .btnn:hover{
+            background-color: rgb(150, 155, 161);
+            color: white;
+        }
+        footer{
+            display: flex;
+           justify-content: center;
+           align-items: center;
+            height: 7vh;
+        }
+        footer .text-footer{
+            text-align: center;
+            font-size: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar background">
+        <div class="logo">
+            <img src="playstation.png" alt="Image Loading">
+        </div>
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact </a></li>
+
+        </ul>
+        <div class="searchbar">
+            <input type="text" name="" id="" placeholder="Search here">
+        </div>
+
+        <button class="btn1">Login</button>
+        <button class="btn2">Sign Up</button>
+
+    </nav>
+
+    <section class="background firstSection">
+        <div class="main-box">
+            <div class="firstHalf">
+                <p class="text1">
+                    The Future is Coding
+                </p>
+                <p class="text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima voluptatum odio
+                    dignissimos consequatur aut incidunt soluta repudiandae consectetur ipsum excepturi at est placeat
+                    harum animi dolor suscipit laudantium deserunt natus architecto, cum eos! Cumque officiis dolorem
+                    nihil! Blanditiis enim quas earum ducimus animi et consequuntur?</p>
+                <div class="buttons">
+                    <button class="buttn">Subscribe</button>
+                    <button class="buttn">Watch Now</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="HP.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="secRight">
+        <div class="para">
+            <p class="sectionTag">
+                Play Station consoles are the best
+            </p>
+
+            <p class="sectionSubTag">
+                to examine somebody/something carefully because you are looking for something; to look for something
+                that is
+                missing. an act of trying to find somebody/something, especially by looking carefully for him/her/it.an
+                act
+                of looking for information in a computer database or network
+                to look into or over carefully or thoroughly in an effort to find or discover something: such as. a :
+            </p>
+        </div>
+
+        <div class="secondHalf">
+            <img src="playstation.png" alt="">
+        </div>
+
+
+    </section>
+
+    <section class="secLeft">
+        <div class="para">
+            <p class="sectionTag">
+                Players Unknown Battle Grounds
+            </p>
+
+            <p class="sectionSubTag">
+                to examine somebody/something carefully because you are looking for something; to look for something
+                that is
+                missing. an act of trying to find somebody/something, especially by looking carefully for him/her/it.an
+                act
+                of looking for information in a computer database or network
+                to look into or over carefully or thoroughly in an effort to find or discover something: such as. a :
+            </p>
+        </div>
+
+        <div class="secondHalf">
+            <img src="pubg.png" alt="">
+        </div>
+
+
+    </section>
+
+    <section class="secTop">
+        <div class="para">
+            <p class="sectionTag">
+                The Arsenal Club
+            </p>
+
+            <p class="sectionSubTag">
+                to examine somebody/something carefully because you are looking for something; to look for something
+                that is
+                missing. an act of trying to find somebody/something, especially by looking carefully for him/her/it.an
+                act
+                of looking for information in a computer database or network
+                to look into or over carefully or thoroughly in an effort to find or discover something: such as. a :
+            </p>
+        </div>
+
+        <div class="secondHalf">
+            <img src="arsenal.png" alt="">
+        </div>
+
+
+    </section>
+
+    <section class="secBottom">
+        <div class="para">
+            <p class="sectionTag">
+                The Ferrari
+            </p>
+
+            <p class="sectionSubTag">
+                to examine somebody/something carefully because you are looking for something; to look for something
+                that is
+                missing. an act of trying to find somebody/something, especially by looking carefully for him/her/it.an
+                act
+                of looking for information in a computer database or network
+                to look into or over carefully or thoroughly in an effort to find or discover something: such as. a :
+            </p>
+        </div>
+
+        <div class="secondHalf">
+            <img src="Ferrari.png" alt="">
+        </div>
+
+
+    </section>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="text" name="age" id="age" placeholder="Enter your age">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <input type="text" name="address" id="address" placeholder="Enter your address">
+
+        <button class="btnn">Submit</button>
+    </div>
+
+    <footer>
+        <p class="text-footer">
+            Copyright &copy; All rights reserved 1991
+        </p>
+    </footer>
+
+</body>
+
+</html>

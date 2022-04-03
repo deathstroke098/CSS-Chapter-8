@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+        .footer_container{
+            background-color: #212329;
+            padding-bottom: 40px;
+        }
+        .footer{
+            height: 35vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            background-color: #212329;
+        }
+        .footer-heading{
+            display: flex;
+            flex-direction: column;
+            margin-right: 4rem;
+        }
+        .footer-heading h2{
+            margin-bottom: 20px;
+        }
+        .footer-heading a{
+            color: wheat;
+            line-height: 20px;
+            text-decoration: none;
+
+        }
+        .footer-heading a:hover{
+            color: yellow;
+            font-size:large;
+            transition: all 0.3s ease-out;
+        }
+        .footer-email-form h2{
+            margin-bottom: 26px;
+        }
+        .input1{
+            width: 20vw;
+            height:5vh;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            /* color: black; */
+            outline: none;
+
+        }
+        .input2{
+            font-size: 1rem;
+            /* background-color: rgb(221, 221, 221); */
+            border-radius: 3px;
+            border: none;
+            padding: 5px;
+            color: rgb(255, 255, 255);
+            background-color:#df3832;
+            width: 80px;
+
+        }
+        .input2:hover{
+            cursor: pointer;
+            background-color: rgb(71, 83, 190);
+            transition: all 0.3s ease-out;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="footer_container">
+        <div class="footer">
+            <div class="footer-heading footer1">
+                <h2>About Us</h2>
+                <a href="#">Blogs</a>
+                <a href="#">Demo</a>
+                <a href="#">Customers</a>
+                <a href="#">Investors</a>
+                <a href="#">Sevices</a>
+            </div>
+            <div class="footer-heading footer2">
+                <h2>Contact Us</h2>
+                <a href="#">Contact</a>
+                <a href="#">Jobs</a>
+                <a href="#">Support</a>
+                <a href="#">Careers</a>
+                <a href="#">Sponsors</a>
+            </div>
+            <div class="footer-heading footer3">
+                <h2>Social Media</h2>
+                <a href="https://www.instagram.com" target="_blank"> Instagram</a>
+                <a href="https://www.facebook.com" target="_blank"> Facebook</a>
+                <a href="https://www.twitter.com" target="_blank">Twitter</a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    Linked-In</i>
+                    <a href="https://www.youtube.com" target="_blank">Youtube</a>
+                    <a href="https://www.reddit.com" target="_blank">Reddit</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our Newsletters</h2>
+                <input type="text" class="input1" placeholder="Enter your email">
+                <input type="submit" class="input2" value="Sign Up">
+                <!-- <button>Submit</button> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

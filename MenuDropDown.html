@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Menu Drop Down</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        /* body::before {
+            background: url('pexel-2.jpg')no-repeat center center/cover;;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            /* bottom: 50px; */
+        /* width: 100%;
+            height: 105vh;
+            z-index: -1;
+            opacity: 0.7;
+        } */
+        body {
+            background: url('pexels-1.jpg')no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        nav {
+            width: 70%;
+            height: 120px;
+            margin: 0px auto;
+        }
+
+        /* nav ul {} */
+        
+        
+        nav ul li {
+            
+            /* border-radius: 20px; */
+            border-right: 2px solid rgb(255, 255, 255);
+            text-align: center;
+            font-size: 19px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            text-shadow: 1px 1px 0px black;
+            text-transform: capitalize;
+            float: left;
+            width: 220px;
+            height: 50px;
+            line-height: 50px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            opacity: 0.6;
+        }
+
+        nav ul li ul {
+            display: none;
+            /* display none isliye kiya kyoki without hover krne pr saare list and items show ho rhe the , lists ko chupaane k liye display none kr diya */
+        }
+
+        nav ul li:hover>ul {
+            display: block;
+            /* block isliye kiya taaki sab list ek hi line me ek ke niche display ho jaae */
+
+        }
+
+        nav ul li:hover {
+            cursor: pointer;
+            background-color: rgb(36, 201, 21);
+            opacity: 0.9;
+            transition: all 0.2s ease;
+        }
+
+        nav ul li ul li {
+            position: relative;
+        }
+
+        nav ul li ul li ul {
+            /* Absolute isliye kiya kyoki ul jo hai wo relative wali position se shuru ho */
+            position: absolute;
+            left: 220px; 
+            /* left 220 isliye kiya kyoki list ki width upar 220px set kri thi or yha pr b 220 hi set krne padegi taaki wo sub-list list se bilkul chipak kr shuru ho */
+            top: 0px;
+            /* top 0 isliye kiya kyoki li ul me chipak jaae */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>India <i class="fa fa-caret-down"></i>
+                <ul>
+                    <li>Delhi <i class="fa fa-caret-right"></i>
+                        <ul>
+                            <li>Connaught Place</li>
+                            <li>Jama Masjid</li>
+                            <li>Nehru Place</li>
+                            <li>Central Secreteriat</li>
+                            <li>Community Center</li>
+                            <li>Qutub Minar</li>
+                            <li>Arjan Garh</li>
+                            <li>Rajeev Chowk</li>
+                        </ul>
+                    </li>
+                    <li>Himachal Pradesh <i class="fa fa-caret-right"></i>
+                        <ul>
+                            <li>Shimla</li>
+                            <li>Manali</li>
+                            <li>Lahaul</li>
+                            <li>Spiti Valley</li>
+                            <li>Kasol</li>
+                        </ul>
+                    </li>
+                    <li>Karnataka</li>
+                    <li>West Bengal</li>
+                    <li>Shillong</li>
+                    <li>Darjelling</li>
+                    <li>Chandigarh</li>
+
+            </li>
+        </ul>
+        <li>France <i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Paris</li>
+                <li>Eiffel Tower</li>
+                <li>St Lane Bridge</li>
+        </li>
+        </ul>
+        <li>USA<i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Texas</li>
+                <li>Utah</li>
+                <li>California</li>
+                <li>Seattle</li>
+                <li>Wyoming</li>
+                <li>Philidelphia</li>
+                <li>Florida</li>
+                <li>Atlanta</li>
+        </li>
+        </ul>
+        <li>Australia<i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Canberra</li>
+                <li>Sydney</li>
+                <li>Melbourne</li>
+        </li>
+        </ul>
+        <!-- <li>Brazil<i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Sao Paulo</li>
+                <li>Brazillia</li>
+        </li>
+        </ul> -->
+        <!-- <li>Pakistan<i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Islamabad</li>
+                <li>Lahore</li>
+                <li>Hyderabad</li>
+        </li>
+        </ul> -->
+        <!-- <li>Italy<i class="fa fa-caret-down"></i>
+            <ul>
+                <li>Rome</li>
+                <li>Naples</li>
+                <li>Turin</li>
+        </li>
+        </ul>
+        <li>Canada<i class="fa fa-caret-down"></i>
+
+            <ul>
+                <li>Ottawa</li>
+                <li>Montreal</li>
+                <li>Ontario</li>
+                <li>Nova Scotia</li>
+        </li>
+        </ul> -->
+        <!-- <li>Russia<i class="fa fa-caret-down"></i>
+            <ul>
+
+                <li>Moscow</li>
+                <li>Kremlin</li>
+                <li>Minsk</li>
+        </li>
+        </ul> -->
+    </nav>
+
+</body>
+
+</html>
